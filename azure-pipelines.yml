@@ -63,7 +63,7 @@ steps:
 
 - script: |
     reportgenerator -reports:$(Build.SourcesDirectory)/**/coverage.corbetura.xml -targetdir:$(Build.SourcesDirectory)/CodeCoverage -reporttypes:HtmlInline_AzurePipelines
-    displayName: 'Create Code Coverage Report'
+  displayName: 'Create Code Coverage Report'
 
 - task: PublishCodeCoverageResults@1
   displayName: 'Publish Code Coverage Report'
