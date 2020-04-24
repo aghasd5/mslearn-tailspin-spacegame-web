@@ -19,8 +19,8 @@ steps:
 
 - task: UseDotNet@2
   displayName: 'Use .NET Core SDK 2.1.505 for SonarCloud'
-    inputs:
-      version: '2.1.505'
+  inputs:
+    version: '2.1.505'
 
 
 
@@ -90,7 +90,7 @@ steps:
 
 - task: SonarCloudPublish@1
   displayName: 'Publish SonarCloud quality gate results'
-  
+
 - task: PublishCodeCoverageResults@1
   displayName: 'Publish code coverage report'
   inputs:
