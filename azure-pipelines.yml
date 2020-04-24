@@ -48,7 +48,7 @@ steps:
 - task: SonarCloudPrepare@1
   displayName: 'Prepare SonarCloud analysis'
   inputs:
-    SonarCloud: 'SonarCloud Connection 1'
+    SonarCloud: 'SonarCloud connection 1'
     organization: '$(SonarOrganization)'
     scannerMode: 'MSBuild'
     projectKey: '$(SonarProjectKey)'
