@@ -52,7 +52,7 @@ steps:
     organization: '$(SonarOrganization)'
     scannerMode: 'MSBuild'
     projectKey: '$(SonarProjectKey)'
-    projectName: '$(SonarProjectName)''
+    projectName: '$(SonarProjectName)'
     projectVersion: '$(Build.BuildNumber)'
     extraProperties: |
       sonar.cs.opencover.reportPaths=$(Build.SourcesDirectory)/TestResults/Coverage/coverage.opencover.xml
