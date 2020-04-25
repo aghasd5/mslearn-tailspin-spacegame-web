@@ -50,7 +50,7 @@ steps:
     inputs:
         command: 'build'
         arguments: '--no-restore --configuration $(buildConfiguration)'
-        projects: '**/*.csrpoj'
+        projects: '**/*.csproj'
     
 -   task: DotNetCoreCLI@2
     displayName: 'Publish the project - $(buildConfiguration)'
